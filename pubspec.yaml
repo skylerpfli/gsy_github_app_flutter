@@ -73,6 +73,8 @@ dependencies:
 #    git:
 #      url: https://github.com/CarSmallGuo/photo_view.git
 #      ref: master
+  flutter_conch_plugin:
+    path: /Users/lipengfei/conch/conch-plugin
 
 dev_dependencies:
   built_value_generator: 8.1.3
@@ -127,6 +129,7 @@ flutter:
   assets:
     - static/images/
     - static/file/
+    - static/conch_data/
 
   fonts:
     - family: wxcIconFont
@@ -135,3 +138,7 @@ flutter:
     - family: google_kavivanar
       fonts:
         - asset: static/font/google_kavivanar.ttf
+
+conch:
+  outPath: static/conch_data/
+  symbolBuild: false
