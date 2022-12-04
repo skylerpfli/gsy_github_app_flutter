@@ -21,6 +21,7 @@ class HttpManager {
   final TokenInterceptors _tokenInterceptors = new TokenInterceptors();
 
   HttpManager() {
+    print("conchFix HttpManager init");
     _dio.interceptors.add(new HeaderInterceptors());
 
     _dio.interceptors.add(_tokenInterceptors);
@@ -30,6 +31,8 @@ class HttpManager {
     _dio.interceptors.add(new ErrorInterceptors());
 
     _dio.interceptors.add(new ResponseInterceptors());
+    print("conchFix HttpManager init over000： ${_dio.hashCode}");
+    print("conchFix HttpManager init over： ${_dio.interceptors}");
   }
 
   ///发起网络请求
@@ -71,6 +74,7 @@ class HttpManager {
 
     Response response;
     try {
+      print("conchFix request:  _dio：${_dio.hashCode}");
       response = await _dio.request(url, data: params, options: option);
     } on DioError catch (e) {
       return resultError(e);
@@ -78,6 +82,9 @@ class HttpManager {
     if (response.data is DioError) {
       return resultError(response.data);
     }
+
+    print("conchFix response:  runtime：${response.runtimeType}");
+    print("conchFix response data: runtime：${ response.data.runtimeType}");
     return response.data;
   }
 

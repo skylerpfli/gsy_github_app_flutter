@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/localization/default_localizations.dart';
 
 /**
@@ -9,6 +10,7 @@ import 'package:gsy_github_app_flutter/common/localization/default_localizations
  * Created by guoshuyu
  * Date: 2018-08-15
  */
+@ConchExclude()
 class GSYLocalizationsDelegate extends LocalizationsDelegate<GSYLocalizations> {
 
   GSYLocalizationsDelegate();

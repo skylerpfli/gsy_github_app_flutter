@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
+import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/config/config.dart';
 
 /**
@@ -7,6 +8,7 @@ import 'package:gsy_github_app_flutter/common/config/config.dart';
  * Created by guoshuyu
  * on 2019/3/23.
  */
+@ConchExclude()
 class LogsInterceptors extends InterceptorsWrapper {
   static List<Map?> sHttpResponses = [];
   static List<String?> sResponsesHttpUrl = [];

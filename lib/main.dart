@@ -21,6 +21,7 @@ void main() async {
   if (useConch) {
     var source = await rootBundle.loadString('static/conch_data/conch_result.json');
     ConchDispatch.instance.loadSource(source);
+    // ConchDispatch.instance.setLogger(LogLevel.Debug);
     ConchDispatch.instance.callStaticFun(library: 'package:gsy_github_app_flutter/main.dart', funcName: 'mainInner');
     return;
   }

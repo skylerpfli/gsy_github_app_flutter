@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/config/config.dart';
 import 'package:gsy_github_app_flutter/common/local/local_storage.dart';
 import 'package:gsy_github_app_flutter/common/net/graphql/client.dart';
@@ -8,6 +9,7 @@ import 'package:gsy_github_app_flutter/common/net/graphql/client.dart';
  * Created by guoshuyu
  * on 2019/3/23.
  */
+@ConchExclude()
 class TokenInterceptors extends InterceptorsWrapper {
   String? _token;
 
