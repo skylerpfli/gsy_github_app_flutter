@@ -74,7 +74,9 @@ dependencies:
 #      url: https://github.com/CarSmallGuo/photo_view.git
 #      ref: master
   flutter_conch_plugin:
-    path: /Users/lipengfei/conch/conch-plugin
+    git:
+      url: https://git.woa.com/flutter_components/FlutterDynamic/conch-plugin.git
+      ref: v1.1.5_pre.1
 
 dev_dependencies:
   built_value_generator: 8.1.3

@@ -12,7 +12,6 @@ import 'package:gsy_github_app_flutter/common/net/result_data.dart';
 class ResponseInterceptors extends InterceptorsWrapper {
   @override
   onResponse(Response response, handler) async {
-    print("conchFix ResponseInterceptors onResponse");
     RequestOptions option = response.requestOptions;
     var value;
     try {
@@ -28,7 +27,6 @@ class ResponseInterceptors extends InterceptorsWrapper {
       value = new ResultData(response.data, false, response.statusCode,
           headers: response.headers);
     }
-    print("conchFix ResponseInterceptors over");
     response.data = value;
     return handler.next(response);
   }
