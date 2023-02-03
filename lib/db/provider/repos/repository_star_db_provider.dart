@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/utils/code_utils.dart';
 
 import 'package:flutter/foundation.dart';
@@ -11,7 +12,7 @@ import 'package:sqflite/sqflite.dart';
  * Created by guoshuyu
  * Date: 2018-08-07
  */
-
+@ConchExclude()
 class RepositoryStarDbProvider extends BaseDbProvider {
   final String name = 'RepositoryStar';
 

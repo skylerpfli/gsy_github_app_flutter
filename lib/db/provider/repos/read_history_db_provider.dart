@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
 import 'package:gsy_github_app_flutter/db/sql_provider.dart';
 import 'package:gsy_github_app_flutter/common/config/config.dart';
 import 'package:gsy_github_app_flutter/model/RepositoryQL.dart';
@@ -12,7 +13,7 @@ import 'package:gsy_github_app_flutter/common/utils/code_utils.dart';
  * Created by guoshuyu
  * Date: 2018-08-07
  */
-
+@ConchExclude()
 class ReadHistoryDbProvider extends BaseDbProvider {
   final String name = 'ReadHistoryV2';
   final String columnId = "_id";

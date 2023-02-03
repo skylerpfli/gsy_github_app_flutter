@@ -76,7 +76,7 @@ dependencies:
   flutter_conch_plugin:
     git:
       url: https://git.woa.com/flutter_components/FlutterDynamic/conch-plugin.git
-      ref: v1.1.5_pre.1
+      ref: v1.1.5_pre.2
 
 dev_dependencies:
   built_value_generator: 8.1.3
@@ -131,7 +131,8 @@ flutter:
   assets:
     - static/images/
     - static/file/
-    - static/conch_data/
+    - static/conch_build/patch_json/
+    - static/conch_build/patch_dat/
 
   fonts:
     - family: wxcIconFont
@@ -142,5 +143,4 @@ flutter:
         - asset: static/font/google_kavivanar.ttf
 
 conch:
-  outPath: static/conch_data/
-  symbolBuild: false
+  outPath: ./static
