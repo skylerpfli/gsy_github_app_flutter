@@ -319,11 +319,9 @@ packages:
   flutter_conch_plugin:
     dependency: "direct main"
     description:
-      path: "."
-      ref: "v1.1.5_pre.2"
-      resolved-ref: "3c479369d36773be87b1836b060c88bb905db111"
-      url: "https://git.woa.com/flutter_components/FlutterDynamic/conch-plugin.git"
-    source: git
+      name: flutter_conch_plugin
+      url: "http://pub.oa.com"
+    source: hosted
     version: "1.1.5"
   flutter_lints:
     dependency: transitive
