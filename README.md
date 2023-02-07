@@ -2,8 +2,6 @@
 
 切换到conchDynamic分支进行体验，使用参照 https://git.woa.com/flutter_components/FlutterDynamic/conch-demo
 
-！部分视图无法展示，正在排查原因
-
 ---
 
 ![](./logo.png)
