@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
+import 'package:flutter_conch_plugin/annotation/patch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/localization/gsy_string_base.dart';
 import 'package:gsy_github_app_flutter/common/localization/gsy_string_en.dart';
 import 'package:gsy_github_app_flutter/common/localization/gsy_string_zh.dart';
 
 
 ///自定义多语言实现
-@ConchExclude()
+@PatchExclude()
 class GSYLocalizations {
   final Locale locale;
 

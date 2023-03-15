@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
+import 'package:flutter_conch_plugin/annotation/patch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/utils/code_utils.dart';
 import 'package:gsy_github_app_flutter/db/sql_provider.dart';
 import 'package:gsy_github_app_flutter/model/Event.dart';
@@ -11,7 +11,7 @@ import 'package:sqflite/sqflite.dart';
  * Created by guoshuyu
  * Date: 2018-08-07
  */
-@ConchExclude()
+@PatchExclude()
 class ReceivedEventDbProvider extends BaseDbProvider {
   final String name = 'ReceivedEvent';
 

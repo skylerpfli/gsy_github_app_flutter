@@ -1,6 +1,6 @@
 import 'package:connectivity/connectivity.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
+import 'package:flutter_conch_plugin/annotation/patch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/net/code.dart';
 import 'package:gsy_github_app_flutter/common/net/result_data.dart';
 
@@ -12,7 +12,7 @@ const NOT_TIP_KEY = "noTip";
  * Created by guoshuyu
  * on 2019/3/23.
  */
-@ConchExclude()
+@PatchExclude()
 class ErrorInterceptors extends InterceptorsWrapper {
 
 

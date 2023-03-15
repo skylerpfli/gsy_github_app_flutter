@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
+import 'package:flutter_conch_plugin/annotation/patch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/net/code.dart';
 import 'package:gsy_github_app_flutter/common/net/result_data.dart';
 
@@ -8,7 +8,7 @@ import 'package:gsy_github_app_flutter/common/net/result_data.dart';
  * Created by guoshuyu
  * on 2019/3/23.
  */
-@ConchExclude()
+@PatchExclude()
 class ResponseInterceptors extends InterceptorsWrapper {
   @override
   onResponse(Response response, handler) async {

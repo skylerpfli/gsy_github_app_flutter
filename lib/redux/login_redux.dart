@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
+import 'package:flutter_conch_plugin/annotation/patch_exclude.dart';
 import 'package:gsy_github_app_flutter/db/sql_manager.dart';
 import 'package:gsy_github_app_flutter/common/dao/user_dao.dart';
 import 'package:gsy_github_app_flutter/redux/gsy_state.dart';
@@ -15,7 +15,7 @@ import 'middleware/epic_store.dart';
  * Created by guoshuyu
  * Date: 2018-07-16
  */
-@ConchExclude()
+@PatchExclude()
 final LoginReducer = combineReducers<bool?>([
   TypedReducer<bool?, LoginSuccessAction>(_loginResult) ,
   TypedReducer<bool?, LogoutAction>(_logoutResult),

@@ -1,4 +1,4 @@
-import 'package:flutter_conch_plugin/annotation/conch_exclude.dart';
+import 'package:flutter_conch_plugin/annotation/patch_exclude.dart';
 import 'package:gsy_github_app_flutter/common/dao/user_dao.dart';
 import 'package:gsy_github_app_flutter/model/User.dart';
 import 'package:gsy_github_app_flutter/redux/gsy_state.dart';
@@ -48,7 +48,7 @@ class UserInfoMiddleware implements MiddlewareClass<GSYState> {
   }
 }
 
-@ConchExclude()
+@PatchExclude()
 Stream<dynamic> userInfoEpic(
     Stream<dynamic> actions, EpicStore<GSYState> store) {
   // Use the async* function to make easier
