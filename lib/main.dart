@@ -21,7 +21,7 @@ void main() async {
   if (useConch) {
     var source = await rootBundle.load('static/conch_build/patch_dat/conch_result.dat');
     ConchDispatch.instance.loadByteSource(source);
-    ConchDispatch.instance.setLogger(LogLevel.Debug);
+    // ConchDispatch.instance.setLogger(LogLevel.Debug);
     ConchDispatch.instance.callStaticFun(library: 'package:gsy_github_app_flutter/main.dart', funcName: 'mainInner');
     return;
   }
